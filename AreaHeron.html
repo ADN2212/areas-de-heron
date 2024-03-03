@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>AdH</title>
+</head>
+<body>
+	<center>
+		<h1>
+			Areas de Herón
+		</h1>
+	</center>	
+	<div class="row">
+		<img 
+		src="Imagenes/h51024x686.jpg" 
+		alt="Heron de Alejandria sentado en un templo de grecia."
+		width="350"
+		height="235" 
+		>
+		<div id = "bio-div">
+			<h2 id = "second-header">
+				Herón de Alejandría
+			</h2>
+			<p>
+				También conocido como Hero, fue un destacado matemático, ingeniero y científico griego que vivió en el siglo I d.C. Sus contribuciones abarcan diversas disciplinas, desde la mecánica hasta la matemática. Heron es reconocido por la invención de ingeniosos dispositivos mecánicos, como la máquina de vapor de Herón, y por su fórmula para calcular el área de un triángulo, conocida como la "fórmula de Herón". Su legado sigue siendo relevante en la historia de la ciencia y las matemáticas, destacando su habilidad para combinar la teoría con aplicaciones prácticas en la antigüedad.
+			</p>
+		</div>
+	</div>
+
+	<div>
+		<h2> La Fórmula de Herón </h2>
+		<p>
+			Esta se utiliza para calcular el área de un triángulo cuando se conocen las longitudes de sus tres lados. Se expresa como:
+		</p>
+		<math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mi>
+				A =
+			</mi>
+			<msqrt>
+				<!-- <mrow> -->
+					<mi>s</mi>
+					<mo>&#8290;</mo>
+					<mo>(</mo>
+					<mi>s</mi>
+					<mo>&#8722;</mo>
+					<mi>a</mi>
+					<mo>)</mo>
+					<mo>&#8290;</mo>
+					<mo>(</mo>
+					<mi>s</mi>
+					<mo>&#8722;</mo>
+					<mi>b</mi>
+					<mo>)</mo>
+					<mo>&#8290;</mo>
+					<mo>(</mo>
+					<mi>s</mi>
+					<mo>&#8722;</mo>
+					<mi>c</mi>
+					<mo>)</mo>
+				<!-- </mrow> -->
+			</msqrt>
+		</math>
+		<p>
+			Donde <b>s</b> es el semiperímetro del triángulo y se calcula con la siguiente formula:
+		</p>
+		<math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mi>s</mi>
+			<mo>=</mo>
+			<mfrac>
+				<mrow>
+					<mi>a</mi>
+					<mo>+</mo>
+					<mi>b</mi>
+					<mo>+</mo>
+					<mi>c</mi>
+				</mrow>
+				<mn>2</mn>
+			</mfrac>
+		</math>
+		<p>
+			Aqui <b>a</b>, <b> b </b> y <b>c</b> son las longitudes de los lados del triángulo. La fórmula se basa en el teorema de Herón y proporciona una manera eficiente de calcular el área sin necesidad de conocer la altura del triángulo.
+		</p>
+	</div>
+</div>
+<div>
+	<h2> Area de Piligonos </h2>
+	<div class="row">
+		<div>
+			<p>
+				Esta formula es de gran utilidad a la hora de calcular el área de poligonos irregulares, pues como se puede ver en la figura No.XX, es posible subdividir cualquier poligono en un grupo de triangulos, por lo que, al saber sus areas podremos saber la del el poligono al sumarlas. 
+			</p>
+			<p>
+				por ejemplo, si llamamos A al area del poligono de la figura No.XX y Tn al area del n-esimo triangulo podemos definir A matematicamente como sigue:  
+			</p>
+			<math xmlns="http://www.w3.org/1998/Math/MathML">
+				<mi>A = </mi>
+				<msub>
+					<mi> T</mi>
+					<mn>1</mn>
+				</msub>
+				<mo>+</mo>
+				<msub>
+					<mi> T</mi>
+					<mn>2</mn>
+				</msub>
+				<mo>+</mo>
+				<msub>
+					<mi> T</mi>
+					<mn>3</mn>
+				</msub>
+				<mo>+</mo>
+				<mi>...</mi>
+				<mo>+</mo>
+				<msub>
+					<mi> T</mi>
+					<mn>n</mn>
+				</msub>
+			</math>
+			<p>
+				En la seccion subsiguente usted dispone de una herramienta util para calcular el area de multiples trianglos por medio de la formula de Herón
+			</p>
+		</div>
+		<img 
+			src="Imagenes/polygon350x328.png"
+			width="350"
+			height="328" 
+			>
+	</div>
+	<div id ="calc-div">
+		<div class="row">
+			Tabla de Triangulos:
+			<input id="a" type="number" min="1" placeholder="Lado A">
+			<input id="b" type="number" min="1" placeholder="Lado B">
+			<input id="c" type="number" min="1" placeholder="Lado C">
+			<button id="add-triangle-btn">
+				Agregar Triangulo
+			</button>
+		</div>
+		
+		<div class="row">
+			<table id = "triangles-table">
+				<thead>
+					<tr>
+						<th>ID</th>
+    				<th>Lado a</th>
+    				<th>Lado b</th>
+    				<th>Lado c</th>
+    				<th> s </th>
+    				<th>Quitar</th>
+  				</tr>
+  			</thead>
+  			<tbody id="triangles-table-body">
+  			</tbody>
+			</table>
+			<div id="area-panel">
+				<center>
+					<h3>Area Total</h3>
+					<h4 id="total-area">
+					</h4>
+				</center>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="addAndRemoveTrianglesModule.js"></script>
+<script type="text/javascript" src="computeAreaModule.js"></script>
+</html>
