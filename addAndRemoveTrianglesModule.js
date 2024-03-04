@@ -1,3 +1,8 @@
+/*
+Este modulo se encarga de agregar, validar y remover los triangulos de la tabla.
+Los cambios que genera este modulo hacen que se dispare el evento que recalcula el area.
+Se utiliza una  IIFE para encapsular las variables correspondientes al modulo.
+*/
 (function addAndRemoveTrianglesModule() {
   var addTriangleBtn = document.getElementById("add-triangle-btn");
   var trianglesTableBody = document.getElementById("triangles-table-body");

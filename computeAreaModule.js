@@ -1,15 +1,19 @@
+/*
+Este modulo se encarga de recomputar el area total cada vez que se agrega o quita un triangulo
+de la tabla.
+Se utiliza una  IIFE para encapsular las variables correspondientes al modulo.
+*/
 (function computeAreaModule() {
   var areaLabel = document.getElementById("total-area");
   var trianglesTableBody = document.getElementById("triangles-table-body");
 
+  //ver https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
   var tableChangeObserver = new MutationObserver(onTableChange);
-
-  const config = { attributes: true, childList: true, subtree: true };
+  const config = { childList: true };
   tableChangeObserver.observe(trianglesTableBody, config);
 
   function onTableChange() {
-    console.log("Recalculando Areas...");
-
+    //console.log("Recalculando Areas...");
     let newArea = 0;
     let currentCells;
     let currentA;
@@ -24,7 +28,7 @@
       currentC = Number(currentCells[3].innerHTML);
       currentS = Number(currentCells[4].innerHTML);
 
-      console.log(currentA, currentB, currentC, currentS);
+      //console.log(currentA, currentB, currentC, currentS);
 
       newArea += formulaHeron(currentA, currentB, currentC, currentS);
     }
@@ -33,7 +37,6 @@
   }
 
   function formulaHeron(a, b, c, s) {
-    //var s = (a + b + c) / 2;
     let area = Math.pow(s * (s - a) * (s - b) * (s - c), 1 / 2);
     return area;
   }
