@@ -3,9 +3,7 @@
   var trianglesTableBody = document.getElementById("triangles-table-body");
   var rowId = 1;
 
-  addTriangleBtn.addEventListener("click", () => {
-    addRowTotable();
-  });
+  addTriangleBtn.addEventListener("click", addRowTotable);
 
   function addRowTotable() {
     let a = parseValue(document.getElementById("a").value);
