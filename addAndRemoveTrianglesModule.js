@@ -35,7 +35,9 @@ Se utiliza una  IIFE para encapsular las variables correspondientes al modulo.
 				</td>
 				<td>
 					<button id=row-${rowId} class="quitBtns">
-						Borrar
+						<span class="material-symbols-outlined">
+							delete
+						</span>
 					</button>
 				</td>
 			</tr>
@@ -49,16 +51,15 @@ Se utiliza una  IIFE para encapsular las variables correspondientes al modulo.
       rowId += 1;
     } else {
       alert(
-		//Esto se podria mejorar usando elementos del DOM para crear el mensaje.
+        //Esto se podria mejorar usando elementos del DOM para crear el mensaje.
         "Estas longitudes no cumplen con la desigualdad triangular, por lo que no es posible formar un triángulo con estas."
       );
     }
   }
 
   function parseValue(val) {
-    if (!val) {
-      return 0;
-    }
+    if (!val) return 0;
+
     return Number(val);
   }
 
