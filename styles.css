@@ -33,7 +33,15 @@ body {
   height: 500px;
 }
 
+.area-headers {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
+#triangles-table {
+  margin-top: 10px;
+  min-height: 50px;
+}
 
 
 
