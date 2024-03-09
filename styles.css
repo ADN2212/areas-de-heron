@@ -17,18 +17,6 @@ body {
   margin-top: 0px;
 }
 
-/*#bio-div {
-  margin-left: 10px;
-}*/
-
-#area-panel {
-  width: 500px;
-}
-
-#triangles-table {
-  width: 500px;
-}
-
 #calc-div {
   height: 500px;
 }
@@ -41,6 +29,11 @@ body {
 #triangles-table {
   margin-top: 10px;
   min-height: 50px;
+  width: 70%;
+}
+
+#area-panel {
+  width: 30%;
 }
 
 #sides-inputs-container {
@@ -78,5 +71,18 @@ body {
     margin-right: 0px;
     margin-top: 5px;
   }
+
+  #triangles-table {
+    width: 100%;
+  }
+
+  #area-panel {
+    width: 100%;
+  }
+
+/*  body {
+    margin-right: 15%;
+    margin-left: 15%;
+  }*/
 
 }
