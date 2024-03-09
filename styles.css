@@ -34,9 +34,17 @@ td {
   text-align: center;
 }
 
+#tirangles-table-h1 {
+  margin-bottom: 0px;
+}
+
 .quitBtns {
   background-color: #FF4040;
   border-radius: 5px;
+}
+
+.quitBtns:hover {
+  cursor: pointer;
 }
 
 .row {
@@ -74,11 +82,11 @@ td {
 
 #sides-inputs-container {
   display: flex;
-  
+/*  justify-content: space-between;*/
 }
 
 .sides-inputs {
-  margin-right: 5px;
+  margin-right: 1.5%;
 }
 
 .figures {
@@ -95,7 +103,6 @@ td {
 .figures:hover {
   box-shadow: 0 0 2px 1px rgba(255, 215, 0, 0.75);
 }
-
 
 #add-triangle-btn {
   width: 10%;
