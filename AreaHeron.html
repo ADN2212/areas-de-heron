@@ -147,10 +147,10 @@
 		<div id="calc-div">
 			<div>
 				<h2>Agregar Triangulo: </h2>
-				<div class="row">
-					<input id="a" type="number" min="1" placeholder="Lado A">
-					<input id="b" type="number" min="1" placeholder="Lado B">
-					<input id="c" type="number" min="1" placeholder="Lado C">
+				<div id="sides-inputs-container">
+					<input id="a" type="number" min="1" placeholder="Lado A" class="sides-inputs">
+					<input id="b" type="number" min="1" placeholder="Lado B" class="sides-inputs">
+					<input id="c" type="number" min="1" placeholder="Lado C" class="sides-inputs">
 					<button id="add-triangle-btn">
 							<span class="material-symbols-outlined">
 								add
@@ -176,7 +176,7 @@
 				</table>
 				<div id="area-panel">
 					<center>
-						<h3 class="area-headers">Áreas Total</h3>
+						<h3 class="area-headers">Área Total</h3>
 						<h4 id="total-area" class="area-headers">
 						</h4>
 					</center>

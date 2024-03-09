@@ -43,6 +43,14 @@ body {
   min-height: 50px;
 }
 
+#sides-inputs-container {
+  display: flex;
+}
+
+.sides-inputs {
+  margin-right: 5px;
+}
+
 .figures {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -55,17 +63,20 @@ body {
 }
 
 @media only screen and (max-width: 950px) {
-/*  body {
-    background-color: red;
-  }*/
-
+  
   .flex-box {
     /*background-color: red;*/
     flex-direction: column;
   }
 
-/*  #bio-div {
-    margin-left: 0px;
+  #sides-inputs-container {
+    flex-direction: column;
+    width: 50%;
   }
-*/
+
+  .sides-inputs {
+    margin-right: 0px;
+    margin-top: 5px;
+  }
+
 }
