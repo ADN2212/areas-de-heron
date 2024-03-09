@@ -66,6 +66,18 @@ h2 {
   margin-bottom: 10px;
   margin-right: 10px;
   margin-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 5px;
+  /*width: 150px;*/
+}
+
+.figures:hover {
+  box-shadow: 0 0 2px 1px rgba(255, 215, 0, 0.75);
+}
+
+#add-triangle-btn:hover {
+  cursor: pointer;
 }
 
 .flex-box {
