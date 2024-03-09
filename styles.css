@@ -29,11 +29,11 @@ body {
 #triangles-table {
   margin-top: 10px;
   min-height: 50px;
-  width: 70%;
+  width: 80%;
 }
 
 #area-panel {
-  width: 30%;
+  width: 20%;
 }
 
 #sides-inputs-container {
@@ -79,10 +79,35 @@ body {
   #area-panel {
     width: 100%;
   }
+}
 
-/*  body {
-    margin-right: 15%;
-    margin-left: 15%;
-  }*/
 
+@media only screen and (max-width: 500px) {
+  #heron-img {
+    width: 245px;
+    height: 125px;
+  }
+  
+  #polygon-img {
+    width: 245px;
+    height: 230px;
+  }
+  
+  body {
+   margin-right: 10%;
+   margin-left: 10%;
+  }
+
+}
+
+@media only screen and (max-width: 300px) {
+  #heron-img {
+    width: 172px;
+    height: 115px;
+  }
+
+  #polygon-img {
+    width: 172px;
+    height: 161px;
+  }
 }
