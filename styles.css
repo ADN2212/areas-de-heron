@@ -17,9 +17,9 @@ body {
   margin-top: 0px;
 }
 
-#bio-div {
+/*#bio-div {
   margin-left: 10px;
-}
+}*/
 
 #area-panel {
   width: 500px;
@@ -43,6 +43,12 @@ body {
   min-height: 50px;
 }
 
+.figures {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
 .flex-box {
   display: flex;
@@ -58,9 +64,8 @@ body {
     flex-direction: column;
   }
 
-  #bio-div {
+/*  #bio-div {
     margin-left: 0px;
   }
-
-
+*/
 }
