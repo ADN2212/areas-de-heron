@@ -44,10 +44,23 @@ body {
 }
 
 
+.flex-box {
+  display: flex;
+}
+
+@media only screen and (max-width: 950px) {
+/*  body {
+    background-color: red;
+  }*/
+
+  .flex-box {
+    /*background-color: red;*/
+    flex-direction: column;
+  }
+
+  #bio-div {
+    margin-left: 0px;
+  }
 
 
-
-
-
-
-
+}
