@@ -34,6 +34,11 @@ td {
   text-align: center;
 }
 
+.quitBtns {
+  background-color: #FF4040;
+  border-radius: 5px;
+}
+
 .row {
    display: flex;
 }
