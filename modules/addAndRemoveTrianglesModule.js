@@ -58,8 +58,8 @@ Se utiliza una  IIFE para encapsular las variables correspondientes al modulo.
   }
 
   function parseValue(val) {
-    if (!val) return 1;
-    
+    if (!val) return 0;
+
     return Number(val);
   }
 

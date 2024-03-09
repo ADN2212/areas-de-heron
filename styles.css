@@ -74,6 +74,7 @@ td {
 
 #sides-inputs-container {
   display: flex;
+  
 }
 
 .sides-inputs {
@@ -95,6 +96,13 @@ td {
   box-shadow: 0 0 2px 1px rgba(255, 215, 0, 0.75);
 }
 
+
+#add-triangle-btn {
+  width: 10%;
+  background-color: rgba(0, 204, 0, 0.65);
+  border-radius: 5px;
+}
+
 #add-triangle-btn:hover {
   cursor: pointer;
 }
@@ -112,6 +120,11 @@ td {
   #sides-inputs-container {
     flex-direction: column;
     width: 50%;
+  }
+
+  #add-triangle-btn {
+    margin-top: 5px;
+    width: 100%;
   }
 
   .sides-inputs {
