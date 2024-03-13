@@ -118,6 +118,16 @@ td {
   display: flex;
 }
 
+
+/*De 1500 px en adelante los margenes seran aumentados para evitar que las lineas de los parrafos sean muy largas*/
+@media only screen and (min-width: 1500px) {
+  body {
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+}
+
+
 @media only screen and (max-width: 1150px) {
   .flex-box {
     /*background-color: red;*/
